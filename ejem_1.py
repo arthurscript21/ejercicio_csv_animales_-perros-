@@ -11,8 +11,15 @@ while True:
     print("1. agregar perro: ")
     print("2. ver perros: ")
     print("3. chao")
-
-    opc = int(input("ingrese opcion: "))
+    while True:
+        try:
+            opc = int(input("ingrese opcion: "))
+            if opc in (1,2,3):
+                break
+            else:
+                print("opcion ingresada mal")
+        except:
+            print("no puedes ingresar letras")
     if opc == 1:
         while True:
             nombre = input("ingrese nombre de su perro: ")
