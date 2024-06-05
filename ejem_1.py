@@ -10,7 +10,7 @@ with open("trabajo.csv", "w", newline="") as csvarchivo:
 while True:
     print("1. agregar perro: ")
     print("2. ver perros: ")
-    print("3. chao ctm")
+    print("3. chao")
 
     opc = int(input("ingrese opcion: "))
     if opc == 1:
